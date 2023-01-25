@@ -8,10 +8,10 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <header>
-        <h1 class="display-3">Weather Dashboard</h1>
-    </header>
-    <main class="row">
+	<header >
+		<h1 class="display-3">Weather Dashboard</h1>
+	</header>
+	<main class="row">
 		<section class="col-12 col-md-4 col-lg-3">
 			<nav class="navbar bg-light">
 				<div class="container-fluid">
@@ -22,5 +22,87 @@
 					</form>
 				</div>
 			</nav>
+			<div class="card custom-card">
+				<h3 class="card-header">Cities</h3>
+				<ul class="card-body list-group" id="searchHistory"></ul>
+				<button id="clearHistory"> Clear History</button>
+			</div>
+		</section>
+		<div class="col-sm-9" id="weatherForecast">
+			<div class="card" style="width:100%">
+				<div class="card-body">
+					<h5 class="card-title" id="chosenCity">Chosen City</h5>
+					<h6 class="card-subtitle mb-2 text-muted" id="currentDate">Date</h6>
+					<img class="card-text" id="icon">
+					<p class="card-text" id="temperature"></p>
+					<p class="card-text" id="wind"></p>
+					<p class="card-text" id="humidity"></p>
+					<p class="card-text">UV index: <span id="uvIndex"></span>
+				</div>
+			</div>
+			<h2> 5-Day Forecast</h2>
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title forecastDate" id="forecastDate0">DATE</h5>
+							<p class="card-text" id="forecastTemperature0">Temperature:</p>
+							<img class="card-text" id="forecastIcon0">
+							<p class="card-text" id="forecastWind0">Wind:</p>
+							<p class="card-text" id="forecastHumidity0">Humidity:</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title forecastDate" id="forecastDate1">DATE</h5>
+							<p class="card-text" id="forecastTemperature1">Temperature:</p>
+							<img class="card-text" id="forecastIcon1">
+							<p class="card-text" id="forecastWind1">Wind:</p>
+							<p class="card-text" id="forecastHumidity1">Humidity:</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title forecastDate" id="forecastDate2">DATE</h5>
+							<p class="card-text" id="forecastTemperature2">Temperature:</p>
+							<img class="card-text" id="forecastIcon2">
+							<p class="card-text" id="forecastWind2">Wind:</p>
+							<p class="card-text" id="forecastHumidity2">Humidity:</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title forecastDate" id="forecastDate3">DATE</h5>
+							<p class="card-text" id="forecastTemperature3">Temperature:</p>
+							<img class="card-text" id="forecastIcon3">
+							<p class="card-text" id="forecastWind3">Wind:</p>
+							<p class="card-text" id="forecastHumidity3">Humidity:</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title forecastDate" id="forecastDate4">DATE</h5>
+							<p class="card-text" id="forecastTemperature4">Temperature:</p>
+							<img class="card-text" id="forecastIcon4">
+							<p class="card-text" id="forecastWind4">Wind:</p>
+							<p class="card-text" id="forecastHumidity4">Humidity:</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+		<script src="./assests/index.js"></script>
 </body>
+
 </html>
