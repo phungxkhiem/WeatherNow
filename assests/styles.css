@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(44, 236, 236);
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: blue;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.25;
+  }
+  main {
+    margin: 20px auto;
+    width: 94%;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: gray;
+    color: black;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    box-shadow: 3px 3px black;
+    transform: translate(-1px, -1px);
+  }
+  .btn:hover {
+    color: red;
+    background-color: white;
+    transform: translate(0, 0);
+    box-shadow: 2px 2px black;
+  }
+  .btn-inline {
+    display: inline;
+  }
+  .btn-back {
+    border-radius: blue;
+    color: yellow;
+    border: none;
+    outline: none;
+    background-color: gray;
+    box-shadow: 3px 3px black;
+    transform: translate(-1px, -1px);
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .btn-back:hover {
+    color: gray;
+    background-color: white;
+    transform: translate(0, 0);
+    box-shadow: 2px 2px black;
+  }
+  
+  .hero {
+    padding: 3% 4%;
+    background-color: white;
+    color: gray;
+  }
+  
+  .hero p {
+    max-width: 75%;
+  }
+  
+  .app-title {
+    font-size: 3rem;
+    background-color: white;
+    color: black;
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: black;
+    box-shadow: gray;
+  }
+  
+  .list-item:hover {
+    background-color: black;
+  }
+
+  .icon-danger {
+    color: rgb(255, 70, 70);
+  }
+  
+  .icon-success {
+    color: rgb(29, 153, 255);
+  }
+  
+  .card {
+    margin: 0 0 20px 0;
+    border: 3px solid black;
+    border-radius: gray
+    ;
+  }
+  
+  .card-header {
+    color: blue;
+    background-color: whitesmoke;
+    padding: 2.5%;
+    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  }
+  
+  .card-body {
+    padding: 7%;
+  }
+  
+  .form-label,
+  .form-input,
+  .form-textarea {
+    display: block;
+  }
+  
+  .form-label {
+    font-size: 1.1rem;
+    margin: 0 0 0 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 3%;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    border: 2px solid lightblue;
+    border-radius: gray
+    ;
+  }
+  
