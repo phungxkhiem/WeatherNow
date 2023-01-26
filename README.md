@@ -1,2 +1,0 @@
-# WeatherNow
-weather assignment
